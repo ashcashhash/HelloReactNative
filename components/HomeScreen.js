@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import {
-  StyleSheet,
-  View,
-  Alert,
-  Modal,
-  Text,
-  Pressable,
-  Button,
   ActivityIndicator,
+  Alert,
+  Button,
+  Modal,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -28,7 +28,7 @@ const HomeScreen = ({ navigation }) => {
           <Pressable
             style={[styles.button, styles.buttonOpen]}
             onPress={() => setModalVisible(true)}>
-            <Text style={styles.textStyle}>Show Modal</Text>
+            <Text style={styles.textStyle}>Show a Modal</Text>
           </Pressable>
           <Button
             title="Go to Details"
@@ -93,9 +93,9 @@ const styles = StyleSheet.create({
   },
   buttonOpen: {
     backgroundColor: '#333',
-    margin: '10px',
+    margin: 10,
     border: 'none',
-    borderRadius: '10px',
+    borderRadius: 10,
     boxShadow:
       '-5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222',
   },
